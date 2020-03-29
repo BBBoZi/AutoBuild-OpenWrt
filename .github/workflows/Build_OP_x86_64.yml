@@ -81,7 +81,7 @@ jobs:
         git clone https://github.com/frainzy1477/luci-app-clash.git package/luci-app-clash
         git clone https://github.com/jefferymvp/luci-app-koolproxyR.git package/luci-app-koolproxyR
         git clone https://github.com/stexine/openwrt-smartdns.git package/openwrt-smartdns
-        git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+        git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
         git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial      
 
     - name: Configuration Customization - Build_x86_64
