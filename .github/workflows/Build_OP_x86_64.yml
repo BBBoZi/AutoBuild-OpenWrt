@@ -11,9 +11,9 @@ on:
   release:
     types: [published]
 
-  push:
-    branches: 
-      - master
+  #push:
+    #branches: 
+      #- master
 
   #schedule:
   #  - cron: 0 8 * * 5
@@ -77,12 +77,8 @@ jobs:
         git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
         git clone https://github.com/pymumu/smartdns.git package/smartdns
-        git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
-        git clone https://github.com/frainzy1477/luci-app-clash.git package/luci-app-clash
-        git clone https://github.com/jefferymvp/luci-app-koolproxyR.git package/luci-app-koolproxyR
-        git clone https://github.com/stexine/openwrt-smartdns.git package/openwrt-smartdns
         git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
-        git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial      
+        git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
 
     - name: Configuration Customization - Build_x86_64
       env:
