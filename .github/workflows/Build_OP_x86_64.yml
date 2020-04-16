@@ -12,10 +12,10 @@ on:
     types: [published]
 
   #push:
-    #branches: 
-      #- master
+  #  branches: 
+  #    - master
 
-  # schedule:
+  #schedule:
   #  - cron: 0 8 * * 5
   
   watch:
@@ -53,7 +53,7 @@ jobs:
           mysql* \
           php*
         sudo -E apt-get update
-        sudo -E apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex node-uglify gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx-ucl libelf-dev autoconf automake libtool autopoint device-tree-compiler libuv-dev
+        sudo -E apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3.5 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf
         sudo -E apt-get -y autoremove --purge
         sudo -E apt-get clean
 
@@ -83,7 +83,7 @@ jobs:
         git clone https://github.com/ujincn/luci-app-smartdns-compat.git package/luci-app-smartdns
         git clone https://github.com/Leo-Jo-My/luci-theme-Butterfly package/luci-theme-Butterfly
         git clone https://github.com/Leo-Jo-My/luci-theme-opentomato package/luci-theme-opentomato
-        git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat package/luci-theme-opentomcat
+        git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat package/luci-theme-opentomcat    
 
     - name: Configuration Customization - Build_x86_64
       env:
