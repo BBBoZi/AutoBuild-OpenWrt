@@ -73,6 +73,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
+        git clone https://github.com/xrouterservice/luci-app-koolddns.git package/luci-app-koolddns
         git clone https://github.com/songchenwen/openwrt-package.git package/lienol
         git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
         git clone https://github.com/vernesong/OpenClash.git package/luci-app-OpenClash
