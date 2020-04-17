@@ -73,7 +73,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/Lienol/openwrt-package.git package/lienol
+        git clone https://github.com/songchenwen/openwrt-package.git package/lienol
         git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
         git clone https://github.com/vernesong/OpenClash.git package/luci-app-OpenClash
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
@@ -81,6 +81,7 @@ jobs:
         git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
         git clone https://github.com/pymumu/smartdns.git package/smartdns
         git clone https://github.com/ujincn/luci-app-smartdns-compat.git package/luci-app-smartdns
+        git clone https://github.com/fw876/helloworld.git package/luci-app-ssrplus
         git clone https://github.com/Leo-Jo-My/luci-theme-Butterfly package/luci-theme-Butterfly
         git clone https://github.com/Leo-Jo-My/luci-theme-opentomato package/luci-theme-opentomato
         git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat package/luci-theme-opentomcat    
